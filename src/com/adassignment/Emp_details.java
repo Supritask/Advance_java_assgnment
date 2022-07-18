@@ -6,7 +6,7 @@ public class Emp_details {
 	private String emp_Id;
 	private String emp_Name;
 	private String emp_email;
-	private String emial_phone_number;
+	private String emp_phone_number;
 	private String emp_hire_Date;
 	private String emp_job_Id;
 	private String emp_salary;
@@ -31,43 +31,43 @@ public class Emp_details {
 		return emp_email;
 	}
 	public void setEmail(String email) {
-		this.emp_Name = email;
+		this.emp_email = email;
 	}
 	public String getPhone_number() {
-		return emial_phone_number;
+		return emp_phone_number;
 	}
 	public void setPhone_number(String phone_number) {
-		this.emp_Name = phone_number;
+		this.emp_phone_number = phone_number;
 	}
 	public String getHire_Date() {
 		return emp_hire_Date;
 	}
 	public void setHire_Date(String hire_Date) {
-		this.emp_Name = hire_Date;
+		this.emp_hire_Date = hire_Date;
 	}
 	public String getJob_Id() {
 		return emp_job_Id;
 	}
 	public void setJob_Id(String job_Id) {
-		this.emp_Name = job_Id;
+		this.emp_job_Id = job_Id;
 	}
 	public String getSalary() {
 		return emp_salary;
 	}
 	public void setSalary(String salary) {
-		this.emp_Name = salary;
+		this.emp_salary = salary;
 	}
 	public String getCommission_Pct() {
 		return emp_commission_Pct;
 	}
 	public void setCommission_Pct(String commission_Pct) {
-		this.emp_Name = commission_Pct;
+		this.emp_commission_Pct = commission_Pct;
 	}
 	public String getManager_Id() {
 		return emp_mgr_Id;
 	}
 	public void setManager_Id(String manager_Id) {
-		this.emp_Name = manager_Id;
+		this.emp_mgr_Id = manager_Id;
 	}
 	public String getDepartment_Id() {
 		return emp_dept_id;

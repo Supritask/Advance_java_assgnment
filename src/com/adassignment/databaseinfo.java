@@ -11,8 +11,7 @@ import java.util.ArrayList;
 
 public class databaseinfo {
 	
-	static String url = "jdbc:sqlserver://MAVCHN0522236\\SQLEXPRESS;databaseName=EmployeeData;integratedSecurity=true;"
-			+ "encrypt=false;TrustServerCertificate=true;";
+	static String url = "jdbc:mysql://localhost:3306/mysql\",\"root\",\"admin@12345678910";
 	
 	public static void insertDB(Emp_details ed,boolean flag)
 	{
@@ -63,9 +62,9 @@ public class databaseinfo {
 			String query="";
 			if(flag==true)
 			{
-				query = "SELECT emp.employee_Id,emp.employee_Name,emp.email,empj.job_description,[dbo].[get_manager_name]"
-						+ "(emp.manager_Id) as ManagerName,dept.department_desc from Employee_Data emp LEFT JOIN "
-						+ "Employee_Job empj ON emp.job_Id = empj.job_Id Left Join Employee_Department dept on "
+				query = "SELECT emp.emp_Id,emp.emp_Name,emp.email,empj.emp_job_Id,[dbo].[get_manager_name]"
+						+ "(emp.emp_mgr_Id) as ManagerName,dept.emp_dept_id from Employee_Data emp LEFT JOIN "
+						+ "emp_job_Id empj ON emp.job_Id = empj.job_Id Left Join Employee_Department dept on "
 						+ "emp.department_Id=dept.department_Id";
 			}
 			else
