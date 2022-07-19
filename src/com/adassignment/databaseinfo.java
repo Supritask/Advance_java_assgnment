@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class databaseinfo {
 	
-	static String url = "jdbc:mysql://localhost:3306/mysql\",\"root\",\"admin@12345678910";
+	static String url = "jdbc:sqlserver://MAVBNG0522123\\SQLEXPRESS;databaseName=EmployeeData;integratedSecurity=true;encrypt=false;TrustServerCertificate=true;";
 	
 	public static void insertDB(Emp_details ed,boolean flag)
 	{
